@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <!--Trees and Dependencies-->
-    <remote name="crdroidandroid/android_device_realme_ice" path="device/tree/ice" revision="14.0" remote="github" />
-    <remote name="crdroidandroid/android_device_oneplus_sm8350-common" path="device/oneplus/sm8350-common" revision="14.0-lunaa" remote="github" />
-    <project name="crdroidandroid/android_hardware_oplus" path="hardware/oplus" revision="14.0-lunaa" remote="github" />
-    <project name="crdroidandroid/proprietary_vendor_oneplus_sm8350-common" path="vendor/oneplus/sm8350-common" revision="14.0-lunaa" remote="crdroid-gitlab" />
+
+  <!-- crDroid  -->
+  <remote  name="crDroid"
+           fetch="https://github.com/crdroidandroid"
+           revision="14.0" />
+
+  <remote  name="crDroid-gl"
+           fetch="https://gitlab.com/crdroidandroid"
+           revision="14.0" />
+
+  <!-- crDroid official trees -->
+  <project path="device/realme/ice" name="android_device_realme_ice" remote="crDroid"/>
+  <project path="vendor/realme/ice" name="proprietary_vendor_realme_ice" remote="crDroid-gl"/>
+
+  <project path="device/oneplus/sm8350-common" name="android_device_oneplus_sm8350-common" revision="14.0-lunaa" remote="crDroid"/>
+  <project path="vendor/oneplus/sm8350-common" name="proprietary_vendor_oneplus_sm8350-common" revision="14.0-lunaa" remote="crDroid-gl"/>
+
+  <project path="kernel/oplus/RMX3461" name="android_kernel_oplus_RMX3461" remote="crDroid"/>
+
+  <!-- Hardware -->
+  <project path="hardware/oplus" name="android_hardware_oplus" revision="14.0-lunaa" remote="crDroid"/>
+
 </manifest>
