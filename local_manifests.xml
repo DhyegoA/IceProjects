@@ -2,6 +2,10 @@
 <manifest>
 
   <!-- crDroid  -->
+  <remote  name="DhyegoA"
+           fetch="https://github.com/DhyegoA"
+           revision="14.0" />
+  
   <remote  name="crDroid"
            fetch="https://github.com/crdroidandroid"
            revision="14.0" />
@@ -11,7 +15,7 @@
            revision="14.0" />
 
   <!-- crDroid official trees -->
-  <project path="device/realme/ice" name="android_device_realme_ice" remote="crDroid"/>
+  <project path="device/realme/ice" name="android_device_realme_ice" remote="DhyegoA"/>
   <project path="vendor/realme/ice" name="proprietary_vendor_realme_ice" remote="crDroid-gl"/>
 
   <project path="device/oneplus/sm8350-common" name="android_device_oneplus_sm8350-common" revision="14.0-lunaa" remote="crDroid"/>
